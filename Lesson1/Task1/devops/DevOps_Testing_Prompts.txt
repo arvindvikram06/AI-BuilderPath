@@ -1,0 +1,16 @@
+CODE GENERATION (DevOps) TEST QUESTION
+
+QUESTION 1: GitHub Actions CI/CD Pipeline
+-------------------------------------
+Write a complete GitHub Actions YAML workflow file for a Node.js web application.
+
+The pipeline should:
+1. Trigger automatically on any push or pull request to the `main` branch.
+2. Check out the repository code.
+3. Set up a Node.js environment (e.g., Node 20).
+4. Install dependencies and run tests (`npm ci` and `npm test`).
+5. Build a Docker image for the application.
+6. Log in to Docker Hub using GitHub Repository Secrets (`DOCKER_USERNAME` and `DOCKER_PASSWORD`).
+7. Push the built Docker image to Docker Hub, tagged with the GitHub commit SHA.
+
+Expected: A clean, production-ready `.github/workflows/ci-cd.yml` file with clearly separated build, test, and deploy steps.

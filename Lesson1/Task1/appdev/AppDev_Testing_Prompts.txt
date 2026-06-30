@@ -1,0 +1,25 @@
+CODE GENERATION (AppDev) TEST QUESTION
+
+QUESTION 1: Full-Stack Task Manager (Multiple Files)
+-------------------------------------
+Build a small, functional Task Management web application. The solution must contain multiple files that connect together to form a working product.
+
+Please generate the following three files:
+
+1. `Program.cs` / `TaskController.cs` (C# Backend)
+   - A C# ASP.NET Core Web API that provides REST endpoints (GET, POST, PUT, DELETE) to manage a list of tasks.
+   - Implement simple CRUD operations.
+   - Store tasks in-memory (using a static list or an InMemory database).
+   - Create a basic Task model (Id, Title, IsCompleted).
+   - Enable CORS so the frontend can communicate with it.
+
+2. `App.tsx` (React Frontend)
+   - A React functional component (using TypeScript) that fetches tasks from the C# backend and displays them.
+   - Include a simple form to create new tasks, a way to toggle their completion status, and a button on each task to delete it.
+   - Include basic inline CSS or Tailwind classes to make it look decent.
+
+3. `docker-compose.yml` (Deployment)
+   - A simple Docker Compose configuration that spins up both the frontend (e.g., using a Node image) and the backend (e.g., using a .NET SDK/ASP.NET image).
+   - Ensure the ports are mapped properly (e.g., 5000/8080 for backend, 3000 for frontend).
+
+Expected: A complete, self-contained mini-application demonstrating C# backend API design, frontend React integration, and basic containerization.

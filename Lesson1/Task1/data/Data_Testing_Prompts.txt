@@ -1,0 +1,16 @@
+CODE GENERATION (Data & SQL) TEST QUESTION
+
+QUESTION 1: Database Setup and Sales Reporting
+-------------------------------------
+Write a complete SQL script (PostgreSQL compatible) that performs the following:
+
+1. Table Creation & Data Insertion:
+   - Create two tables: `Customers` (id, name, email) and `Orders` (id, customer_id, order_date, total_amount).
+   - Insert at least 5 sample customers and 15 sample orders into these tables. Ensure at least one customer has more than 3 orders.
+
+2. Sales Reporting Query:
+   - Write a query that calculates the total number of orders and the total sales amount for each customer.
+   - Only include customers who have made MORE than 3 orders.
+   - Sort the final results by the highest total sales amount in descending order.
+
+Expected: A single SQL script containing the CREATE, INSERT, and SELECT statements, written cleanly and efficiently.
